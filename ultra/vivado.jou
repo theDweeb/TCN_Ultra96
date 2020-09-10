@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Sep  9 15:14:22 2020
+# Process ID: 23148
+# Current directory: /mnt/500GB/home/steve/TCN/ultra
+# Command line: vivado -mode batch -source check_timing.tcl -notrace
+# Log file: /mnt/500GB/home/steve/TCN/ultra/vivado.log
+# Journal file: /mnt/500GB/home/steve/TCN/ultra/vivado.jou
+#-----------------------------------------------------------
+source check_timing.tcl -notrace

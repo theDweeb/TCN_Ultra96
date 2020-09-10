@@ -1,0 +1,164 @@
+TRACE::2020-09-09.15:21:11::SCWPlatform::Trying to open the hw design at ./Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:11::SCWPlatform::DSA given ./Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:11::SCWPlatform::DSA absoulate path /mnt/500GB/home/steve/TCN/vitis_platform/Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:13::SCWPlatform::DSA directory /mnt/500GB/home/steve/TCN/vitis_platform/Ultra96/output/ultra/hw
+TRACE::2020-09-09.15:21:13::SCWPlatform:: Platform Path /mnt/500GB/home/steve/TCN/vitis_platform/Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:13::SCWPlatform:: Unique name xilinx.com:xd:ultra:1.0
+TRACE::2020-09-09.15:21:17::SCWPlatform::update - Opened the Hw DB with name ultra_wrapper
+TRACE::2020-09-09.15:21:17::SCWWriter::formatted JSON is {
+	"platformName":	"ultra",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Expandable",
+	"platformDesc":	"A vitis platform for Ultra96",
+	"platHandOff":	"../ultra/ultra.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ultra.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	true,
+	"platformSamplesDir":	""
+}
+TRACE::2020-09-09.15:21:17::SCWWriter::formatted JSON is {
+	"platformName":	"ultra",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Expandable",
+	"platformDesc":	"A vitis platform for Ultra96",
+	"platHandOff":	"../ultra/ultra.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ultra.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	true,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ultra",
+	"systems":	[{
+			"systemName":	"ultra",
+			"systemDesc":	"ultra",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ultra"
+		}]
+}
+TRACE::2020-09-09.15:21:17::SCWDomain::checking for install qemu data   : 
+TRACE::2020-09-09.15:21:17::SCWPlatform::Trying to open the hw design at ./Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:17::SCWPlatform::DSA given ./Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:17::SCWPlatform::DSA absoulate path /mnt/500GB/home/steve/TCN/vitis_platform/Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:17::SCWPlatform::DSA directory /mnt/500GB/home/steve/TCN/vitis_platform/Ultra96/output/ultra/hw
+TRACE::2020-09-09.15:21:17::SCWPlatform:: Platform Path /mnt/500GB/home/steve/TCN/vitis_platform/Ultra96/output/ultra/hw/ultra.xsa
+TRACE::2020-09-09.15:21:17::SCWPlatform:: Unique name xilinx.com:xd:ultra:1.0
+TRACE::2020-09-09.15:21:17::SCWPlatform::update - Opened existing hwdb ultra_wrapper
+TRACE::2020-09-09.15:21:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-09.15:21:17::SCWWriter::formatted JSON is {
+	"platformName":	"ultra",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Expandable",
+	"platformDesc":	"A vitis platform for Ultra96",
+	"platHandOff":	"../ultra/ultra.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ultra.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	true,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ultra",
+	"systems":	[{
+			"systemName":	"ultra",
+			"systemDesc":	"ultra",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ultra",
+			"sysActiveDom":	"xrt",
+			"sysDefaultDom":	"xrt",
+			"domains":	[{
+					"domainName":	"xrt",
+					"domainDispName":	"xrt",
+					"domainDesc":	"xrt",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"imageLocation":	"./Ultra96/src/a53/xrt/image",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-09-09.15:21:17::SCWPlatform::Started generating the artifacts platform ultra
+TRACE::2020-09-09.15:21:17::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-09-09.15:21:17::SCWPlatform::Started generating the artifacts for system configuration ultra
+LOG::2020-09-09.15:21:17::SCWSystem::Checking the domain xrt
+LOG::2020-09-09.15:21:17::SCWSystem::Not a boot domain 
+TRACE::2020-09-09.15:21:17::SCWSystem::Copying the bif file from  ./Ultra96/src/a53/xrt/linux.bif To ./Ultra96/output/ultra/export/ultra/sw/ultra/boot/
+LOG::2020-09-09.15:21:17::SCWSystem::Started Processing the domain xrt
+TRACE::2020-09-09.15:21:17::SCWDomain::Generating domain artifcats
+LOG::2020-09-09.15:21:17::SCWSystem::Completed Processing the domain xrt
+LOG::2020-09-09.15:21:17::SCWSystem::Completed Processing the sysconfig ultra
+LOG::2020-09-09.15:21:17::SCWPlatform::Completed generating the artifacts for system configuration ultra
+TRACE::2020-09-09.15:21:17::SCWPlatform::Started preparing the platform 
+TRACE::2020-09-09.15:21:17::SCWPlatform::Started writing the spfm file 
+TRACE::2020-09-09.15:21:17::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-09-09.15:21:17::SCWPlatform::Completed generating the platform
+TRACE::2020-09-09.15:21:17::SCWWriter::formatted JSON is {
+	"platformName":	"ultra",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Expandable",
+	"platformDesc":	"A vitis platform for Ultra96",
+	"platHandOff":	"../ultra/ultra.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ultra.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	true,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ultra",
+	"systems":	[{
+			"systemName":	"ultra",
+			"systemDesc":	"ultra",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"ultra",
+			"sysActiveDom":	"xrt",
+			"sysDefaultDom":	"xrt",
+			"domains":	[{
+					"domainName":	"xrt",
+					"domainDispName":	"xrt",
+					"domainDesc":	"xrt",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"./Ultra96/src/boot",
+					"bootBifFile":	"./Ultra96/src/a53/xrt/linux.bif",
+					"isMicroBlaze":	"false",
+					"imageLocation":	"./Ultra96/src/a53/xrt/image",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-09-09.15:21:17::SCWPlatform::updated the xpfm file.

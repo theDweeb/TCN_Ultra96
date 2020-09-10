@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Sep  9 15:12:08 2020
+# Process ID: 22466
+# Current directory: /mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/impl_1
+# Command line: vivado -log ultra_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ultra_wrapper.tcl -notrace
+# Log file: /mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/impl_1/ultra_wrapper.vdi
+# Journal file: /mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ultra_wrapper.tcl -notrace

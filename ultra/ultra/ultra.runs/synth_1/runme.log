@@ -1,0 +1,423 @@
+
+*** Running vivado
+    with args -log ultra_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra_wrapper.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ultra_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top ultra_wrapper -part xczu3eg-sbva484-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2395.203 ; gain = 0.000 ; free physical = 104213 ; free virtual = 123855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ultra_wrapper' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/hdl/ultra_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ultra' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ultra_clk_wiz_0_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_clk_wiz_0_0' (1#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ultra_ps_e_0_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_ps_e_0_0' (2#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ps_e_0' of module 'ultra_ps_e_0_0' has 18 connections declared, but only 10 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:41]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:52]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk0_150_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk0_150_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk0_150_0' (3#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk0_150_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk0_150' of module 'ultra_psr_clk0_150_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:52]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk1_300_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk1_300_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk1_300_0' (4#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk1_300_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk1_300' of module 'ultra_psr_clk1_300_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:58]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:64]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk2_75_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk2_75_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk2_75_0' (5#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk2_75_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk2_75' of module 'ultra_psr_clk2_75_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:64]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:70]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk3_100_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk3_100_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk3_100_0' (6#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk3_100_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk3_100' of module 'ultra_psr_clk3_100_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:70]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:76]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk4_200_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk4_200_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk4_200_0' (7#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk4_200_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk4_200' of module 'ultra_psr_clk4_200_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:76]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk5_400_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk5_400_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk5_400_0' (8#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk5_400_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk5_400' of module 'ultra_psr_clk5_400_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:82]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:88]
+INFO: [Synth 8-6157] synthesizing module 'ultra_psr_clk6_600_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk6_600_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_psr_clk6_600_0' (9#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/.Xil/Vivado-22296-RezaLabPC/realtime/ultra_psr_clk6_600_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'psr_clk6_600' of module 'ultra_psr_clk6_600_0' has 10 connections declared, but only 5 given [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:88]
+INFO: [Synth 8-6157] synthesizing module 'ultra_xlconcat_0_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_xlconcat_0_0/synth/ultra_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (10#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_xlconcat_0_0' (11#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_xlconcat_0_0/synth/ultra_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ultra_xlconcat_1_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_xlconcat_1_0/synth/ultra_xlconcat_1_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_xlconcat_1_0' (12#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_xlconcat_1_0/synth/ultra_xlconcat_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ultra_xlconstant_0_0' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_xlconstant_0_0/synth/ultra_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (13#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_xlconstant_0_0' (14#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_xlconstant_0_0/synth/ultra_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'ultra' (15#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/synth/ultra.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra_wrapper' (16#1) [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/hdl/ultra_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In1[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2447.012 ; gain = 51.809 ; free physical = 104243 ; free virtual = 123886
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2449.980 ; gain = 54.777 ; free physical = 104236 ; free virtual = 123879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2449.980 ; gain = 54.777 ; free physical = 104236 ; free virtual = 123879
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.980 ; gain = 0.000 ; free physical = 104230 ; free virtual = 123873
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_clk_wiz_0_0/ultra_clk_wiz_0_0/ultra_clk_wiz_0_0_in_context.xdc] for cell 'ultra_i/clk_wiz_0'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_clk_wiz_0_0/ultra_clk_wiz_0_0/ultra_clk_wiz_0_0_in_context.xdc] for cell 'ultra_i/clk_wiz_0'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_ps_e_0_0/ultra_ps_e_0_0/ultra_ps_e_0_0_in_context.xdc] for cell 'ultra_i/ps_e_0'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_ps_e_0_0/ultra_ps_e_0_0/ultra_ps_e_0_0_in_context.xdc] for cell 'ultra_i/ps_e_0'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk0_150_0/ultra_psr_clk0_150_0/ultra_psr_clk0_150_0_in_context.xdc] for cell 'ultra_i/psr_clk0_150'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk0_150_0/ultra_psr_clk0_150_0/ultra_psr_clk0_150_0_in_context.xdc] for cell 'ultra_i/psr_clk0_150'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk1_300_0/ultra_psr_clk1_300_0/ultra_psr_clk1_300_0_in_context.xdc] for cell 'ultra_i/psr_clk1_300'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk1_300_0/ultra_psr_clk1_300_0/ultra_psr_clk1_300_0_in_context.xdc] for cell 'ultra_i/psr_clk1_300'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk2_75_0/ultra_psr_clk2_75_0/ultra_psr_clk2_75_0_in_context.xdc] for cell 'ultra_i/psr_clk2_75'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk2_75_0/ultra_psr_clk2_75_0/ultra_psr_clk2_75_0_in_context.xdc] for cell 'ultra_i/psr_clk2_75'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk3_100_0/ultra_psr_clk3_100_0/ultra_psr_clk3_100_0_in_context.xdc] for cell 'ultra_i/psr_clk3_100'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk3_100_0/ultra_psr_clk3_100_0/ultra_psr_clk3_100_0_in_context.xdc] for cell 'ultra_i/psr_clk3_100'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk4_200_0/ultra_psr_clk4_200_0/ultra_psr_clk4_200_0_in_context.xdc] for cell 'ultra_i/psr_clk4_200'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk4_200_0/ultra_psr_clk4_200_0/ultra_psr_clk4_200_0_in_context.xdc] for cell 'ultra_i/psr_clk4_200'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk5_400_0/ultra_psr_clk5_400_0/ultra_psr_clk5_400_0_in_context.xdc] for cell 'ultra_i/psr_clk5_400'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk5_400_0/ultra_psr_clk5_400_0/ultra_psr_clk5_400_0_in_context.xdc] for cell 'ultra_i/psr_clk5_400'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk6_600_0/ultra_psr_clk6_600_0/ultra_psr_clk6_600_0_in_context.xdc] for cell 'ultra_i/psr_clk6_600'
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.srcs/sources_1/bd/ultra/ip/ultra_psr_clk6_600_0/ultra_psr_clk6_600_0/ultra_psr_clk6_600_0_in_context.xdc] for cell 'ultra_i/psr_clk6_600'
+Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.730 ; gain = 0.000 ; free physical = 104149 ; free virtual = 123792
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2549.730 ; gain = 0.000 ; free physical = 104149 ; free virtual = 123792
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2549.730 ; gain = 154.527 ; free physical = 104180 ; free virtual = 123836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2549.730 ; gain = 154.527 ; free physical = 104180 ; free virtual = 123836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ultra_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk0_150. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk1_300. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk2_75. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk3_100. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk4_200. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk5_400. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/psr_clk6_600. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/xlconcat_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2549.730 ; gain = 154.527 ; free physical = 104180 ; free virtual = 123836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2549.730 ; gain = 154.527 ; free physical = 104179 ; free virtual = 123835
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2549.730 ; gain = 154.527 ; free physical = 104156 ; free virtual = 123819
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 3068.137 ; gain = 672.934 ; free physical = 103541 ; free virtual = 123195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 3068.137 ; gain = 672.934 ; free physical = 103541 ; free virtual = 123195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 3078.152 ; gain = 682.949 ; free physical = 103538 ; free virtual = 123193
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103573 ; free virtual = 123212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103573 ; free virtual = 123212
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103572 ; free virtual = 123212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103572 ; free virtual = 123211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103572 ; free virtual = 123212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103571 ; free virtual = 123211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |ultra_clk_wiz_0_0    |         1|
+|2     |ultra_ps_e_0_0       |         1|
+|3     |ultra_psr_clk0_150_0 |         1|
+|4     |ultra_psr_clk1_300_0 |         1|
+|5     |ultra_psr_clk2_75_0  |         1|
+|6     |ultra_psr_clk3_100_0 |         1|
+|7     |ultra_psr_clk4_200_0 |         1|
+|8     |ultra_psr_clk5_400_0 |         1|
+|9     |ultra_psr_clk6_600_0 |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |ultra_clk_wiz_0_0    |     1|
+|2     |ultra_ps_e_0_0       |     1|
+|3     |ultra_psr_clk0_150_0 |     1|
+|4     |ultra_psr_clk1_300_0 |     1|
+|5     |ultra_psr_clk2_75_0  |     1|
+|6     |ultra_psr_clk3_100_0 |     1|
+|7     |ultra_psr_clk4_200_0 |     1|
+|8     |ultra_psr_clk5_400_0 |     1|
+|9     |ultra_psr_clk6_600_0 |     1|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------------+------+
+|      |Instance         |Module               |Cells |
++------+-----------------+---------------------+------+
+|1     |top              |                     |   241|
+|2     |  ultra_i        |ultra                |   241|
+|3     |    xlconcat_0   |ultra_xlconcat_0_0   |     0|
+|4     |    xlconcat_1   |ultra_xlconcat_1_0   |     0|
+|5     |    xlconstant_0 |ultra_xlconstant_0_0 |     0|
++------+-----------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.027 ; gain = 696.824 ; free physical = 103572 ; free virtual = 123211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 3092.027 ; gain = 597.074 ; free physical = 103611 ; free virtual = 123250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 3092.035 ; gain = 696.824 ; free physical = 103610 ; free virtual = 123250
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3092.035 ; gain = 0.000 ; free physical = 103605 ; free virtual = 123245
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3117.777 ; gain = 0.000 ; free physical = 103621 ; free virtual = 123261
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 3129.746 ; gain = 1559.008 ; free physical = 103749 ; free virtual = 123388
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3129.746 ; gain = 0.000 ; free physical = 103748 ; free virtual = 123388
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/mnt/500GB/home/steve/TCN/ultra/ultra/ultra.runs/synth_1/ultra_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra_wrapper_utilization_synth.rpt -pb ultra_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 15:12:04 2020...
